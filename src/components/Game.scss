@@ -1,0 +1,47 @@
+$primary-color:#877afe;
+$hover-color:#362b9a;
+$text-color:#fff;
+$result-color:rgb(186, 17, 17);
+
+
+.game-container{
+    text-align: center;
+    background-color: $text-color;
+    padding: 30px;
+    border-radius: 10px;
+
+    .choices{
+        display: flex;
+        gap: 10px;
+        justify-content: center;
+        margin-bottom: 20px;
+
+        .choice-btn{
+            background-color: $primary-color;
+            border: none;
+            padding: 10px 20px;
+            min-width: 65px;
+            font-size: 18px;
+            cursor: pointer;
+            border-radius: 5px;
+            color: $text-color;
+            transition:background-color .3s ease;
+
+            &:hover{
+                background-color: $hover-color;
+            }
+
+        }
+    }
+    .results {
+        font-size: 20px;
+
+
+        .result-text {
+            font-weight: bold;
+            margin-top: 10px;
+            color: $result-color;
+        }
+    }
+
+}
